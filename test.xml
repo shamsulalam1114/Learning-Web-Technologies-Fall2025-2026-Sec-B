@@ -1,0 +1,22 @@
+<shop>
+    <item id="1">
+        <name>Apple</name>
+        <price>1.00</price>
+        <quantity>10</quantity>
+    </item>
+    <item id="2">
+        <name>Banana</name>
+        <price>0.50</price>
+        <quantity>20</quantity>
+    </item>
+    <item id="3">
+        <name>Orange</name>
+        <price>0.80</price>
+        <quantity>15</quantity>
+    </item>
+    <item id="4">
+        <name>Mango</name>
+        <price>1.50</price>
+        <quantity>5</quantity>
+    </item>
+</shop>
