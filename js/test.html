@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <title>JS Example</title>
+</head>
+<body>
+    <h1>JSS Example</h1>
+
+    <form action="" method="" enctype="" id="login" onsubmit="return checklogin()">
+    <input type="text" id="username" name="username" value="" placeholder="username" onblur="testUsername()" />
+    <p id="uError"></p>
+    <input type="text" id="password" name="password" value="" placeholder="password" onblur="testPassword()" /> <br>
+    <p id="pError"></p>
+    <input type="submit" name="" value="submit" id="btn"/>
+    </form>
+
+
+
+    <script>
+        
+
+
+        function testUsername(){
+            
+            let username = document.getElementById('username').value;
+            let msg = document.getElementById('pError');
+
+            if(username == ""){
+                    
+                    msg.innerHTML = "please type username first!";
+                    msg.style.color = "red";
+                    
+            }else{
+                document.getElementsByTagName('h1')[0].innerHTML = username;
+                msg.innerHTML = "";
+            }
+           
+        }
+
+        function testPassword(){
+
+        }
+
+        function checklogin(){
+            
+        }
+
+    </script>
+</body>
+</html>
