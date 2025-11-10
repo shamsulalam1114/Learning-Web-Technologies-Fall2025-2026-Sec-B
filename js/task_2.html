@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <title>JS Example</title>
+</head>
+<body>
+    <h1>JSS Example</h1>
+
+    <form action="" method="" enctype="" id="name" onsubmit="return checkname()">
+    <input type="text" id="username" name="username" value="" placeholder="Enter your name" onblur="checkname()" oninput="this.value = this.value.toUpperCase()" />
+    <p id="uError"></p>
+    
+    <input type="submit" name="" value="submit" id="btn"/>
+    <!-- <input type="button" name="" value="reset" id="resetbtn" onclick="resetForm()"/> -->
+    </form>
+<script>
+        function checkname(){
+           
+            let name = document.getElementById('username').value;
+            let msg = document.getElementById('uError');
+
+            if(name == ""){
+                    
+                    msg.innerHTML = "please type your name first!";
+                    msg.style.color = "red";
+                    return false;
+                    
+            }else{
+                
+    
+                document.getElementsByTagName('h1')[0].innerHTML = name.toUpperCase();
+                msg.innerHTML = "";
+                return true;
+            }
+
+        
+
+        }
+       
+
+ 
+
+</script>
+
+
+
+    
+</body>
+</html>

@@ -20,7 +20,7 @@
 
 
         function testUsername(){
-            
+           
             let username = document.getElementById('username').value;
             let msg = document.getElementById('pError');
 
@@ -38,9 +38,31 @@
 
         function testPassword(){
 
+            let password = document.getElementById('password').value;
+            let msg = document.getElementById('uError');
+
+            if(password == ""){
+                    
+                    msg.innerHTML = "please type password first!";
+                    msg.style.color = "red";
+                    
+            }else{
+                
+                msg.innerHTML = "";
+            }
         }
 
         function checklogin(){
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+
+            if(username == "" || password == ""){
+                alert("please fill up the form correctly!");
+                return false;
+            }else{
+                alert("form submitted successfully!");
+                return true;
+            }
             
         }
 
