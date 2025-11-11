@@ -3,27 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM</title>
+    <title>Sample Page</title>
+    <script src="linkjs/dob.js"></script>
 </head>
 <body>
-
-    <form action="" method="" enctype="">
+    <form>
         <fieldset>
-            <legend>Date of birth</legend>
-        <table>
-            <tr>
-                <td>DOB</td>
-                <td><input type="date" name="" value="" /> </td>
-            </tr>
-            
-                <td>
-                
-                   <input type="submit" name="" value="Submit"/>
-                   
-                </td>
-            
-        </table>
-        </fieldset>
+        <legend>Date of Birth</legend>
+        <input type="date" id="dob" name="dob">
+        </fieldset><br>
+        <p id="pError"></p>
+        <input type="submit" id="btn">
     </form>
 </body>
 </html>

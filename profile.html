@@ -3,35 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Sample Page</title>
+    <script src="linkjs/profile.js"></script>
 </head>
 <body>
-
-    <form action="" method="" enctype="">
+    <form>
         <fieldset>
-            <legend>Profile Picture</legend>
-        <table>
-            <tr>
-                <td>USER ID</td>
-                <td><input type="text" name="" value="" /> </td>
-            </tr>
-            
-            <tr>
-                <td>Picture</td>
-                <td>
-                   <input type="file" name="" value=""/>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                   
-                   <input type="submit" name="" value="Submit"/>
-                
-                </td>
-            </tr>
-        </table>
-        </fieldset>
+        <legend>Profile Picture</legend>
+        <br>
+        User Id <input type="text" id="userid"><br><br>
+        Picture <input type="file" id="picture">
+        <hr><br>
+        <p id="pError"></p>
+        <input type="submit" id="btn">
+        </fieldset><br> 
     </form>
 </body>
 </html>
