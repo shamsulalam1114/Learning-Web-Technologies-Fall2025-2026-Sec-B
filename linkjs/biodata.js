@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       msg.style.color = "red";
       return;
     }
+  
 
     if (username.split(" ").length < 2) {
       msg.innerHTML = "Name must contain at least two words.";

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AUTOMETIC REGESTRATION FORM</title>
+  <script src="MID_TASK/js/select.js"></script>
+</head>
+
+<body>
+  <center>
+    <h1>Form Fields</h1>
+    <br>
+    <td align="center">
+        <h4>Choose Field to Add in Form</h4>    
+    </td>
+      
+    <select id="fieldType">
+      <option value="">Select A Field</option>
+      <option value="username">UserName</option>
+      <option value="gender">Gender</option>
+      <option value="email">Email</option>
+      <option value="address">Address</option>
+      <option value="phone">Phone Number</option>
+      <option value="password">Password</option>
+    </select>
+
+    <button onclick="addField()">+ADD</button>
+    <hr>
+    <hr>
+    <div id="dynamic-fields"></div>
+
+    <button onclick="saveData()">Save</button>
+  </center>
+
+
+</body>
+
+</html>
