@@ -10,87 +10,121 @@
 </head>
 <body>
     <header>
-        <h1>John Doe</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <center>
+            <h1>John Doe</h1>
+            <nav>
+                <a href="#about">About</a> | 
+                <a href="#education">Education</a> | 
+                <a href="#contact">Contact</a>
+            </nav>
+        </center>
     </header>
 
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm John Doe, a passionate Computer Science student with a strong interest in 
-                web development and software engineering. I'm currently seeking internship opportunities 
-                to apply my technical skills and gain real-world experience in the industry.
-            </p>
-            <p>
-                I have experience in HTML, CSS, JavaScript, and various programming languages including 
-                Java, Python, and C++. I'm eager to learn new technologies and contribute to innovative 
-                projects while developing my professional skills.
-            </p>
+            <center>
+                <h2>About Me</h2>
+                <table border="1" width="600px" cellpadding="10px" cellspacing="0px">
+                    <tr>
+                        <td>
+                            <p>
+                                Hello! I'm John Doe, a passionate Computer Science student with a strong interest in 
+                                web development and software engineering. I'm currently seeking internship opportunities 
+                                to apply my technical skills and gain real-world experience in the industry.
+                            </p>
+                            <p>
+                                I have experience in HTML, CSS, JavaScript, and various programming languages including 
+                                Java, Python, and C++. I'm eager to learn new technologies and contribute to innovative 
+                                projects while developing my professional skills.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </center>
         </section>
+
+        <br>
 
         <section id="education">
-            <h2>Educational Qualifications</h2>
-            <table border="1">
-                <tr>
-                    <th>Degree</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                    <th>CGPA/Grade</th>
-                </tr>
-                <tr>
-                    <td>Bachelor of Science in Computer Science</td>
-                    <td>ABC University</td>
-                    <td>2022 - Present</td>
-                    <td>3.75/4.00</td>
-                </tr>
-                <tr>
-                    <td>Higher Secondary Certificate (HSC)</td>
-                    <td>XYZ College</td>
-                    <td>2020 - 2022</td>
-                    <td>GPA 5.00/5.00</td>
-                </tr>
-                <tr>
-                    <td>Secondary School Certificate (SSC)</td>
-                    <td>ABC High School</td>
-                    <td>2018 - 2020</td>
-                    <td>GPA 5.00/5.00</td>
-                </tr>
-            </table>
+            <center>
+                <h2>Educational Qualifications</h2>
+                <table border="1" width="600px" cellpadding="10px" cellspacing="0px">
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>CGPA/Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Science in CSE</td>
+                        <td>ABC University</td>
+                        <td>2022 - Present</td>
+                        <td>3.75/4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Higher Secondary Certificate</td>
+                        <td>XYZ College</td>
+                        <td>2020 - 2022</td>
+                        <td>GPA 5.00/5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Secondary School Certificate</td>
+                        <td>ABC High School</td>
+                        <td>2018 - 2020</td>
+                        <td>GPA 5.00/5.00</td>
+                    </tr>
+                </table>
+            </center>
         </section>
 
+        <br>
+
         <section id="contact">
-            <h2>Contact Me</h2>
             <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="phone">Phone:</label><br>
-                <input type="tel" id="phone" name="phone"><br><br>
-
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject" required><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" cols="50" required></textarea><br><br>
-
-                <input type="submit" value="Send Message">
+                <center>
+                    <table border="1" width="600px" cellpadding="10px" cellspacing="0px">
+                        <tr>
+                            <th colspan="2">CONTACT ME</th>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" id="name" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" id="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td><input type="tel" id="phone" name="phone"></td>
+                        </tr>
+                        <tr>
+                            <td>Subject</td>
+                            <td><input type="text" id="subject" name="subject"></td>
+                        </tr>
+                        <tr>
+                            <td>Message</td>
+                            <td><textarea id="message" name="message" rows="5" cols="40"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="right">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </td>
+                        </tr>
+                    </table>
+                </center>
             </form>
         </section>
     </main>
 
+    <br>
+
     <footer>
-        <p>&copy; 2025 John Doe. All rights reserved.</p>
-        <p>Email: johndoe@example.com | Phone: +1234567890</p>
+        <center>
+            <p>&copy; 2025 John Doe. All rights reserved.</p>
+            <p>Email: johndoe@example.com | Phone: +1234567890</p>
+        </center>
     </footer>
 </body>
 </html>
