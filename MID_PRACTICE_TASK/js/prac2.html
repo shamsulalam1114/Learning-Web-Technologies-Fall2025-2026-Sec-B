@@ -3,16 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Student Marks Entry</title>
     <script src="linkjs/prac2.js"></script>
 </head>
 <body>
-    <form>
-        <center>
-        <table  width="800px" cellpadding="10px" cellspacing="0px">
-            
+    <center>
+        <h1>Student Marks Entry System</h1>
+        
+        <table border="1" width="600px" cellpadding="10px" cellspacing="0px">
+            <tr>
+                <th colspan="2">Enter Student Information</th>
+            </tr>
+            <tr>
+                <td>Student Name</td>
+                <td><input type="text" id="studentName"></td>
+            </tr>
+            <tr>
+                <td>Marks</td>
+                <td><input type="text" id="studentMarks"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="errorMsg"></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="submitBtn">Submit</button>
+                </td>
+            </tr>
         </table>
-        </center>
-    </form>
+        
+        <br>
+        
+        <table border="1" width="600px" cellpadding="10px" cellspacing="0px" id="studentTable">
+            <tr>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </table>
+    </center>
 </body>
 </html>
