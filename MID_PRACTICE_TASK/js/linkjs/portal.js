@@ -1,65 +1,83 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("btn");
+  const form = document.querySelector("form");
   const usernameInput = document.getElementById("username");
+  const emailInput = document.getElementById("email");
   const phoneInput = document.getElementById("phone");
   const passwordInput = document.getElementById("password");
   const confirmPasswordInput = document.getElementById("confirm_password");
   const msg = document.getElementById("pError");
 
-  btn.addEventListener("click", function (event) {
+  form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    let username = usernameInput.value.trim();
-    let email = document.getElementById("email").value;
+    // Clear previous error message
+    msg.innerHTML = "";
+    msg.style.color = "red";
 
+    // Get input values
+    let username = usernameInput.value.trim();
+    let email = emailInput.value.trim();
+    let phone = phoneInput.value.trim();
+    let password = passwordInput.value;
+    let confirmPassword = confirmPasswordInput.value;
+
+    // Validate Name
     if (username === "") {
       msg.innerHTML = "Please type your name first!";
-      msg.style.color = "red";
-      return;
-    }
-  
-
-    if (username.split(" ").length < 2) {
-      msg.innerHTML = "Name must contain at least two words.";
-      msg.style.color = "red";
       return;
     }
 
-    const firstChar = username.charAt(0);
-    if (!((firstChar >= 'A' && firstChar <= 'Z') || (firstChar >= 'a' && firstChar <= 'z'))) {
-      msg.innerHTML = "Name must start with a letter.";
-      msg.style.color = "red";
-      return;
-    }
-
-    for (let i = 0; i < username.length; i++) {
-      const ch = username.charAt(i);
-      const isLetter = (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z');
-      const isAllowed = isLetter || ch === '.' || ch === '-' || ch === ' ';
-
-      if (!isAllowed) {
-        msg.innerHTML = "Name can only contain letters, dot (.), dash (-), or spaces.";
-        msg.style.color = "red";
-        return;
-      }
-    }
+    // Validate Email - must contain @ and .
     if (email === "") {
       msg.innerHTML = "Please type your email first!";
-      msg.style.color = "red";
       return;
     }
 
-    if (
-      !email.includes("@") || email.startsWith("@") || email.endsWith("@") ||                         
-      !email.includes(".") || email.lastIndexOf(".") < email.indexOf("@") + 2 || email.endsWith(".") ) 
-      {
+    if (!email.includes("@") || !email.includes(".")) {
+      msg.innerHTML = "Email must contain @ and .";
+      return;
+    }
+
+    if (email.startsWith("@") || email.endsWith("@") || email.endsWith(".")) {
       msg.innerHTML = "Please enter a valid email address!";
-      msg.style.color = "red";
       return;
     }
-   
-    msg.innerHTML = "Form submitted successfully!";
-    msg.style.color = "green";
 
-  });
+    // Validate Phone Number - must contain only digits
+    if (phone === "") {
+      msg.innerHTML = "Please type your phone number first!";
+      return;
+    }
+
+    if (isNaN(phone) || phone.includes(".") || phone.includes(" ")) {
+      msg.innerHTML = "Phone number must contain only digits!";
+      return;
+    }
+
+    // Validate Password - must be at least 6 characters
+    if (password === "") {
+      msg.innerHTML = "Please type your password first!";
+      return;
+    }
+
+    if (password.length < 6) {
+      msg.innerHTML = "Password must be at least 6 characters!";
+      return;
+    }
+
+    // Validate Confirm Password
+    if (confirmPassword === "") {
+      msg.innerHTML = "Please type your confirm password first!";
+      return;
+    }
+
+    // Password and Confirm Password must match
+    if (password !== confirmPassword) {
+      msg.innerHTML = "Password and Confirm Password must match!";
+      return;
+    }
+
+    // If all validations pass
+    msg.innerHTML = "Registration Successful!";
+    msg.style.color = "green";  });
 });
