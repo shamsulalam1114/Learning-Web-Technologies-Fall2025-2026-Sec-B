@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Dynamic Style Control Panel</title>
     <script src="linkjs/lt7.js"></script>
 </head>
 <body>
     <center>
-        <h1></h1>
+        <h1>Dynamic Style Control Panel</h1>
         
-        <table border="1" width="600px" cellpadding="30px" cellspacing="0px">
-       
+        <table border="1" width="700px" cellpadding="20px" cellspacing="0px">
+            <tr>
+                <th>Sample Text</th>
+            </tr>
+            <tr>
+                <td>
+                    <p id="sampleText">
+                        This is a sample paragraph text. You can modify its appearance using the 
+                        control buttons below. Try changing the background color, increasing the 
+                        font size, or centering the text. Have fun experimenting with different styles!
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th>Control Panel</th>
+            </tr>
+            <tr>
+                <td align="center">
+                    <button id="changeBgBtn">Change Background Color</button>
+                    <button id="increaseFontBtn">Increase Font Size</button>
+                    <button id="centerTextBtn">Center Text</button>
+                    <button id="resetBtn">Reset Style</button>
+                </td>
+            </tr>
         </table>
     </center>
 </body>
