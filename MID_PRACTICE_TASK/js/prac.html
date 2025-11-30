@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management Portal</title>
+    <script src="linkjs/prac.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Patient Management Portal</h1>
+        
+        <table border="1" width="800px" cellpadding="20px" cellspacing="0px">
+            <tr>
+                <th colspan="2">Doctor's Dashboard</th>
+            </tr>
+            <tr>
+                <td width="30%" valign="top">
+                    <h3>Sidebar Menu</h3>
+                    <div id="menuContainer">
+                        <ul id="menuList">
+                            <li id="menu1" data-count="0">
+                                <a href="#" onclick="menuClick('menu1'); return false;">Dashboard</a>
+                            </li>
+                            <li id="menu2" data-count="0">
+                                <a href="#" onclick="menuClick('menu2'); return false;">Patient Profiles</a>
+                            </li>
+                            <li id="menu3" data-count="0">
+                                <a href="#" onclick="menuClick('menu3'); return false;">Appointments</a>
+                            </li>
+                            <li id="menu4" data-count="0">
+                                <a href="#" onclick="menuClick('menu4'); return false;">Prescriptions</a>
+                            </li>
+                            <li id="menu5" data-count="0">
+                                <a href="#" onclick="menuClick('menu5'); return false;">Lab Results</a>
+                            </li>
+                            <li id="menu6" data-count="0">
+                                <a href="#" onclick="menuClick('menu6'); return false;">Messages</a>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+                <td width="70%" valign="top">
+                    <h3>Content Area</h3>
+                    <p id="contentDisplay">
+                        Welcome to the Patient Management Portal. Click on any menu item to view content.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="resetBtn">Reset Menu</button>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
