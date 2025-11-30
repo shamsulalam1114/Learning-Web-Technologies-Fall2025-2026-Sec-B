@@ -1,7 +1,7 @@
-// Variable to track current mode
+
 let isDarkMode = false;
 
-// Wait for DOM to load
+
 document.addEventListener("DOMContentLoaded", function() {
     const themeToggle = document.getElementById("themeToggle");
     const body = document.getElementById("body");
@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const mainTable = document.getElementById("mainTable");
     const footer = document.getElementById("footer");
 
-    // Theme toggle button click event
+    
     themeToggle.addEventListener("click", function() {
         
         if (isDarkMode) {
-            // Switch to Light Mode
+            
             body.style.backgroundColor = "#ffffff";
             body.style.color = "#000000";
             
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
             isDarkMode = false;
             
         } else {
-            // Switch to Dark Mode
+           
             body.style.backgroundColor = "#1a1a1a";
             body.style.color = "#ffffff";
             
