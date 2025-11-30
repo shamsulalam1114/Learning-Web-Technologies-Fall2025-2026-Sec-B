@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("btn");
   const usernameInput = document.getElementById("username");
+  const phoneInput = document.getElementById("phone");
+  const passwordInput = document.getElementById("password");
+  const confirmPasswordInput = document.getElementById("confirm_password");
   const msg = document.getElementById("pError");
 
   btn.addEventListener("click", function (event) {
