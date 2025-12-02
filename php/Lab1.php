@@ -41,8 +41,22 @@ $stds = [
     ]
     ];//multidimensional associative array
 
-    $stds['s2']['cgpa'];//accessing multidimensional associative array
+    // $stds['s2']['cgpa'];//accessing multidimensional associative array
 
+    // function sum($a, $b) {
+    //     return $a + $b;
+    // }//function declear by function keyword
+
+    // sum(5, 10);//function call
+
+    // for($i=0, $i<10;)
+
+
+echo "Test"."abc"."234".{$name}.$name;// directly print string and more faster than print, this can be use inside an condtional statement, loop, etc.
+print ('test');// accepts single parameter, have return value 1, slower than echo(have return type void),
+
+
+//$obj->//object operator use to access object properties and methods
 
 
 
