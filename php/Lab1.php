@@ -21,6 +21,29 @@ $std = [
     'cgpa' => 3.5
 ];//associative array
 
+$std['cgpa'];//accessing associative array
+
+$stds = [
+    's1' => [
+        'name' => 'John Doe',
+        'id' => 123,
+        'cgpa' => 3.75
+    ],
+    's2' => [
+        'name' => 'Jane Smith',
+        'id' => 124,
+        'cgpa' => 3.85
+    ],
+    's3' => [
+        'name' => 'Alice Johnson',
+        'id' => 125,
+        'cgpa' => 3.95
+    ]
+    ];//multidimensional associative array
+
+    $stds['s2']['cgpa'];//accessing multidimensional associative array
+
+
 
 
 
