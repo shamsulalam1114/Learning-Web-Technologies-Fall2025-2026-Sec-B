@@ -47,3 +47,8 @@
 
     echo "Testing another php section";
 ?>
+
+<?php
+
+print('akash')
+?>
