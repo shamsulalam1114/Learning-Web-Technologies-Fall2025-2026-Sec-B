@@ -1,10 +1,10 @@
 <?php
 
-    $name = "alamin";
+    $name = "Akash";
     $id = 123;
     $cgpa = 3.5;
 
-    $std = ['alamin', $id, $cgpa];
+    $std = ['Akash', $id, $cgpa];
     $std = array($name, $id, $cgpa);
 
     $stds = [
