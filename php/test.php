@@ -8,19 +8,19 @@
     $std = array($name, $id, $cgpa);
 
     $stds = [
-        ['alamin', '1', '3.5'],
-        ['alamin', '2', '3.5'],
-        ['alamin', '4', '3.5'],
-        ['alamin', '5', '3.5']
+        ['Akash', '1', '3.5'],
+        ['Akash', '2', '3.5'],
+        ['Akash', '4', '3.5'],
+        ['Akash', '5', '3.5']
     ];
 
     $stds[3][2];
 
-    $std = ['name'=>'alamin', 'id'=>1, 'cgpa'=>3.5];
+    $std = ['name'=>'Akash', 'id'=>1, 'cgpa'=>3.5];
     $std['cgpa'];
 
     $stds = [
-        's1'=>['name'=>'alamin', 'id'=>1, 'cgpa'=>3.5],
+        's1'=>['name'=>'Akash', 'id'=>1, 'cgpa'=>3.5],
         's2'=>['name'=>'xyz', 'id'=>2, 'cgpa'=>2.5],
         's3'=>['name'=>'abc', 'id'=>3, 'cgpa'=>4.0]
     ];
