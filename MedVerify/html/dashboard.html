@@ -6,6 +6,8 @@
     <meta name="author" content="MedVerify Team">
     <meta name="description" content="MedVerify Patient Dashboard - Manage your health records and appointments.">
     <title>MedVerify | Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="../js/dashboard.js"></script>
 </head>
 <body id="top">
     <header>
@@ -29,44 +31,42 @@
     <hr>
 
     <main>
+        <div class="welcome-banner">
+            <center>
+                <h2>Hello, John Doe!</h2>
+                <p><i>Welcome back to your health dashboard</i></p>
+            </center>
+        </div>
+
+        <!-- Summary Cards using Flexbox -->
+        <div class="cards-container">
+            <div class="card card-blue" id="card1">
+                <h3>Total Verifications</h3>
+                <h1 id="verificationsCount">12</h1>
+                <p>Checks Completed</p>
+                <a href="reports.html">View Details</a>
+            </div>
+
+            <div class="card card-green" id="card2">
+                <h3>Upcoming Appointments</h3>
+                <h1 id="appointmentsCount">Oct 24</h1>
+                <p>Next Appointment</p>
+                <a href="#">View Calendar</a>
+            </div>
+
+            <div class="card card-orange" id="card3">
+                <h3>Total Reports</h3>
+                <h1 id="reportsCount">5</h1>
+                <p>Reports Available</p>
+                <a href="reports.html">View Reports</a>
+            </div>
+        </div>
+
+        <br>
         <center>
-            <h2>Hello, John Doe!</h2>
-            <p><i>Welcome back to your health dashboard</i></p>
-        </center>
-
-        <br><br>
-
-        <center>
-            <table border="1" width="80%" cellpadding="20px" cellspacing="0px">
-                <tr>
-                    <td width="33%" align="center" valign="top">
-                        <h3>Total Verifications</h3>
-                        <br>
-                        <h1>12</h1>
-                        <p>Checks Completed</p>
-                        <br>
-                        <a href="reports.html">View Details</a>
-                    </td>
-
-                    <td width="33%" align="center" valign="top">
-                        <h3>Upcoming Appointments</h3>
-                        <br>
-                        <h1>Oct 24</h1>
-                        <p>Next Appointment</p>
-                        <br>
-                        <a href="#">View Calendar</a>
-                    </td>
-
-                    <td width="33%" align="center" valign="top">
-                        <h3>Total Reports</h3>
-                        <br>
-                        <h1>5</h1>
-                        <p>Reports Available</p>
-                        <br>
-                        <a href="reports.html">View Reports</a>
-                    </td>
-                </tr>
-            </table>
+            <button id="addVerificationBtn">Add Verification</button>
+            <button id="addReportBtn">Add Report</button>
+            <button id="resetBtn">Reset Counts</button>
         </center>
 
         <br><br>
@@ -99,14 +99,16 @@
 
         <br><br>
 
-        <center>
-            <h3>Quick Actions</h3>
-            <p>
-                <a href="#">Upload New Report</a> | 
-                <a href="#">Book Appointment</a> | 
-                <a href="#">Contact Support</a>
-            </p>
-        </center>
+        <div class="quick-actions">
+            <center>
+                <h3>Quick Actions</h3>
+                <p>
+                    <a href="#">Upload New Report</a> | 
+                    <a href="#">Book Appointment</a> | 
+                    <a href="#">Contact Support</a>
+                </p>
+            </center>
+        </div>
 
         <br>
         <center>
