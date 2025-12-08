@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="MedVerify Team">
-    <meta name="description" content="MedVerify Patient Dashboard - Manage your health records and appointments.">
-    <title>MedVerify | Dashboard</title>
+    <title>MedVerify</title>
     <link rel="stylesheet" href="css/dashboard.css">
     <script src="js/dashboard.js"></script>
 </head>
@@ -13,14 +10,14 @@
     <header>
         <center>
             <h1>MedVerify</h1>
-            <p><i>Your Health, Verified</i></p>
+            <p><b>Dashboard</b></p>
         </center>
     </header>
 
     <nav>
         <center>
             <ul>
-                <li><a href="dashboard.html"><b>Dashboard</b></a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="view_reports.html">View Reports</a></li>
                 <li><a href="upload_report.html">Upload Report</a></li>
                 <li><a href="family_profile.html">Family Profile</a></li>
@@ -32,22 +29,21 @@
     <hr>
 
     <main>
-        <!-- Welcome Banner in Table -->
-        <table border="0" width="100%" cellpadding="10px" cellspacing="0px">
+        
+        <table width="100%">
             <tr>
                 <td align="center">
-                    <h2>Hello, John Doe!</h2>
-                    <p><i>Welcome back to your health dashboard</i></p>
+                    <h2>Welcome Md Shamsul Alam</h2>
                 </td>
             </tr>
         </table>
 
         <br><br>
 
-        <!-- Summary Cards using Table -->
-        <table border="1" width="100%" cellpadding="30px" cellspacing="0px">
+        
+        <table border="1" width="100%">
             <tr>
-                <td width="33%" align="center" valign="top" class="card-blue" id="card1">
+                <td align="center" class="card-blue" id="card1">
                     <h3>Total Verifications</h3>
                     <br>
                     <h1 id="verificationsCount">12</h1>
@@ -56,7 +52,7 @@
                     <a href="view_reports.html">View Details</a>
                 </td>
 
-                <td width="34%" align="center" valign="top" class="card-green" id="card2">
+                <td align="center" class="card-green" id="card2">
                     <h3>Upcoming Appointments</h3>
                     <br>
                     <h1 id="appointmentsCount">Oct 24</h1>
@@ -65,7 +61,7 @@
                     <a href="#">View Calendar</a>
                 </td>
 
-                <td width="33%" align="center" valign="top" class="card-orange" id="card3">
+                <td  align="center"class="card-orange" id="card3">
                     <h3>Total Reports</h3>
                     <br>
                     <h1 id="reportsCount">5</h1>
@@ -78,8 +74,8 @@
 
         <br>
 
-        <!-- Control Buttons in Table -->
-        <table border="0" width="100%" cellpadding="10px" cellspacing="0px">
+        
+        <table width="100%">
             <tr>
                 <td align="center">
                     <button id="addVerificationBtn">Add Verification</button>
@@ -91,8 +87,8 @@
 
         <br><br>
 
-        <!-- Recent Activity in Table -->
-        <table border="0" width="100%" cellpadding="10px" cellspacing="0px">
+        
+        <table width="100%">
             <tr>
                 <td align="center">
                     <h3>Recent Activity</h3>
@@ -100,7 +96,7 @@
             </tr>
         </table>
 
-        <table border="1" width="100%" cellpadding="10px" cellspacing="0px">
+        <table border="1" width="100%">
             <tr>
                 <th>Date</th>
                 <th>Activity</th>
@@ -125,8 +121,8 @@
 
         <br><br>
 
-        <!-- Quick Actions in Table -->
-        <table border="0" width="100%" cellpadding="10px" cellspacing="0px" class="quick-actions">
+        
+        <!-- <table width="100%">
             <tr>
                 <td align="center">
                     <h3>Quick Actions</h3>
@@ -137,11 +133,11 @@
                     </p>
                 </td>
             </tr>
-        </table>
+        </table> -->
 
         <br>
 
-        <!-- Back to Top in Table -->
+        
         <table border="0" width="100%" cellpadding="10px" cellspacing="0px">
             <tr>
                 <td align="center">
@@ -155,13 +151,29 @@
 
     <footer>
         <center>
-            <p>&copy; 2025 MedVerify | All Rights Reserved</p>
-            <p>
-                <a href="#">Privacy Policy</a> | 
-                <a href="#">Terms of Service</a> | 
-                <a href="#">Help</a>
-            </p>
-            <p><a href="#top">Back to Top</a></p>
+            <table>
+                <tr>
+                    <td>
+                        <p>&copy; 2025 MedVerify | All Rights Reserved</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <a href="#">Privacy Policy</a> | 
+                            <a href="#">Terms of Service</a> | 
+                            <a href="#">Help</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><a href="#top">Back to Top</a></p>
+                    </td>
+                </tr>
+
+            </table>
+        
         </center>
     </footer>
 </body>
