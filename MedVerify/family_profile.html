@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>MedVerify | Family Profile</title>
+    <title>Family Profile</title>
     <link rel="stylesheet" href="css/dashboard.css">
     <script src="js/family_profile.js"></script>
 </head>
@@ -11,7 +11,7 @@
     <header>
         <center>
             <h1>MedVerify</h1>
-            <p><i>Your Health, Verified</i></p>
+
         </center>
     </header>
 
@@ -31,11 +31,11 @@
 
     <main>
         
-        <table border="0" width="100%" cellpadding="10px" cellspacing="0px">
+        <table width="100%">
             <tr>
                 <td align="center">
                     <h2>Family Profile</h2>
-                    <p><i>Manage your family members and their health records</i></p>
+                    
                 </td>
             </tr>
         </table>
@@ -43,9 +43,9 @@
         <br><br>
 
         
-        <table border="1" width="100%" cellpadding="30px" cellspacing="0px">
+        <table border="1" width="100%">
             <tr>
-                <td width="100%" align="center" valign="top" class="card-orange">
+                <td width="100%" align="center" >
                     <h3>Total Family Members</h3>
                     <br>
                     <h1 id="familyMembersCount">3</h1>
@@ -57,7 +57,7 @@
         <br><br>
 
         
-        <table border="0" width="100%" cellpadding="10px" cellspacing="0px">
+        <table width="100%">
             <tr>
                 <td align="center">
                     <h3>Family Members</h3>
@@ -65,7 +65,7 @@
             </tr>
         </table>
 
-        <table border="1" width="100%" cellpadding="10px" cellspacing="0px">
+        <table border="1" width="100%" id="familyMembersTable">
             <tr>
                 <th>Member ID</th>
                 <th>Name</th>
@@ -75,26 +75,26 @@
                 <th>Action</th>
             </tr>
             <tr>
-                <td>FM-001</td>
-                <td>John Doe</td>
+                <td>232345</td>
+                <td>Md. Shamsul Alam</td>
                 <td>Self</td>
-                <td>35</td>
+                <td>25</td>
                 <td>A+</td>
                 <td><a href="#">View Profile</a></td>
             </tr>
             <tr>
-                <td>FM-002</td>
-                <td>Jane Doe</td>
-                <td>Spouse</td>
+                <td>435345345</td>
+                <td>Md. Sadi</td>
+                <td>Brother</td>
                 <td>32</td>
                 <td>B+</td>
                 <td><a href="#">View Profile</a></td>
             </tr>
             <tr>
-                <td>FM-003</td>
-                <td>Jimmy Doe</td>
-                <td>Son</td>
-                <td>8</td>
+                <td>6575673</td>
+                <td>Md. Ahsan</td>
+                <td>Cousin</td>
+                <td>26</td>
                 <td>A+</td>
                 <td><a href="#">View Profile</a></td>
             </tr>
@@ -103,7 +103,7 @@
         <br><br>
 
         
-        <table border="0" width="100%" cellpadding="10px" cellspacing="0px">
+        <table width="100%" >
             <tr>
                 <td align="center">
                     <h3>Add New Family Member</h3>
@@ -111,7 +111,7 @@
             </tr>
         </table>
 
-        <table border="1" width="100%" cellpadding="20px" cellspacing="0px">
+        <table border="1" width="100%" >
             <tr>
                 <td width="30%">Name:</td>
                 <td width="70%"><input type="text" id="memberName" placeholder="Enter name" style="width: 100%; padding: 5px;"></td>
@@ -133,7 +133,7 @@
         <br>
 
         
-        <table border="0" width="100%" cellpadding="10px" cellspacing="0px">
+        <table width="100%">
             <tr>
                 <td align="center">
                     <button id="addMemberBtn">Add Family Member</button>
@@ -145,7 +145,7 @@
         <br>
 
         
-        <table border="0" width="100%" cellpadding="10px" cellspacing="0px">
+        <table  width="100%">
             <tr>
                 <td align="center">
                     <a href="#top">Back to Top</a>
@@ -159,11 +159,7 @@
     <footer>
         <center>
             <p>&copy; 2025 MedVerify | All Rights Reserved</p>
-            <p>
-                <a href="#">Privacy Policy</a> | 
-                <a href="#">Terms of Service</a> | 
-                <a href="#">Help</a>
-            </p>
+
             <p><a href="#top">Back to Top</a></p>
         </center>
     </footer>
