@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Reports</title>
     <link rel="stylesheet" href="css/dashboard.css">
+    <script src="js/view_reports.js"></script>
 </head>
 <body id="top">
     <header>
@@ -102,20 +103,48 @@
 
         <br><br>
 
-        
+        <!-- Add New Report Form -->
         <table width="100%">
             <tr>
                 <td align="center">
-                    <a href="upload_report.html">
-                        <button>Upload New Report</button>
-                    </a>
+                    <h3>Add New Report</h3>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" width="100%">
+            <tr>
+                <td width="30%">Date:</td>
+                <td width="70%"><input type="text" id="reportDate" placeholder="YYYY-MM-DD" style="width: 100%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td>Test Name:</td>
+                <td><input type="text" id="reportTest" placeholder="Enter test name" style="width: 100%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td>Doctor/Lab:</td>
+                <td><input type="text" id="reportDoctor" placeholder="Enter doctor or lab name" style="width: 100%; padding: 5px;"></td>
+            </tr>
+            <tr>
+                <td>Status:</td>
+                <td><input type="text" id="reportStatus" placeholder="Normal or Critical" style="width: 100%; padding: 5px;"></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table width="100%">
+            <tr>
+                <td align="center">
+                    <button id="addReportBtn">Add Report</button>
+                    <button id="clearFormBtn">Clear Form</button>
                 </td>
             </tr>
         </table>
 
         <br>
 
-        
+        <!-- Back to Top in Table -->
         <table width="100%">
             <tr>
                 <td align="center">
