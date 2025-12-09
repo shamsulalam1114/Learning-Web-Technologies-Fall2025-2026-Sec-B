@@ -16,7 +16,7 @@
 
     echo "<p>Shape 1:</p>";
     for($i = 0; $i < 3; $i++){
-        for($j = 0; $j <= $i; $j++){
+        for($j = 0; $j < 3 - $i; $j++){
             echo $array[$i][$j]." ";
         }
         echo "<br>";
@@ -24,8 +24,10 @@
 
     echo "<p>Shape 2:</p>";
     for($i = 0; $i < 3; $i++){
-        for($j = 3; $j > $i; $j--){
-            echo $array[$i][$j]." ";
+        for($j = 3; $j < 4 + $i; $j++){
+            if($j < count($array[$i])){
+                echo $array[$i][$j]." ";
+            }
         }
         echo "<br>";
     }
