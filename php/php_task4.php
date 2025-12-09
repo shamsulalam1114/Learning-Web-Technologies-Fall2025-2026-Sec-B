@@ -11,5 +11,5 @@
         $largest = $num3;
     }
     echo "<p>The largest number among ".$num1.", ".$num2.", and ".$num3." is: ".$largest."</p>";
-    
+
 ?>
