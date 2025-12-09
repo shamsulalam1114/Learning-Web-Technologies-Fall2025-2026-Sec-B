@@ -1,14 +1,16 @@
 <?php
 
-    $Total_Amount = 1000;
-    $VAT = 0.15;// 15%
-    $Total_with_VAT = $Total_Amount + ($Total_Amount * $VAT);
-    echo "<p>Total Amount: ".$Total_Amount."</p>";
-    echo "<p>VAT (15%): ".$VAT * 100 ."%</p>";
-    echo "<p>Total Amount with VAT: ".$Total_with_VAT."</p>";
+    $amount = 1000;
+    $vat_rate = 0.15;
     
-?>
+    $vat = $amount * $vat_rate;
+    $total_with_vat = $amount + $vat;
 
+    echo "<p>Original Amount: ".$amount."</p>";
+    echo "<p>VAT (15%): ".$vat."</p>";
+    echo "<p>Total Amount with VAT: ".$total_with_vat."</p>";
+
+?>
 
 <?php
 
