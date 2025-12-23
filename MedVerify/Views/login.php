@@ -4,7 +4,7 @@
     <title>Login Page</title>
 </head>
 <body>
-        <form action="loginCheck.php" method="post" enctype="">
+        <form action="../Controllers/loginCheck.php" method="post" enctype="">
             <fieldset>
             <legend>Login Page</legend>
             <table>
